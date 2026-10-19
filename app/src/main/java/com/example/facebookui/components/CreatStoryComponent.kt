@@ -21,6 +21,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.facebookui.R
@@ -41,7 +42,9 @@ fun CreateStory(modifier: Modifier = Modifier) {
                     contentScale = ContentScale.Crop
                     , modifier = modifier.weight(3f)
                 )
-                Text("Create a\nStory",modifier.padding(horizontal = 16.dp, vertical = 6.dp).weight(1.5f).fillMaxWidth(), textAlign = TextAlign.Center)
+                Text("Create a\nStory",modifier.padding(horizontal = 16.dp, vertical = 6.dp).weight(1.5f).fillMaxWidth(), textAlign = TextAlign.Center,
+                    color = Color.Black
+                    )
             }
         }
         Box(modifier.offset(x = 44.dp , y = 107.dp).background(color = Color.White, shape = CircleShape)) {

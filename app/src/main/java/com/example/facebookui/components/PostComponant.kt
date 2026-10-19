@@ -63,8 +63,8 @@ fun Post (modifier: Modifier = Modifier
             )
             Spacer(Modifier.size(5.dp))
             Column(verticalArrangement = Arrangement.SpaceAround, modifier = Modifier.weight(1f).fillMaxHeight()) {
-                Text(name)
-                Text(time)
+                Text(name, color = Color.Black)
+                Text(time, color = Color.Black)
             }
             Icon(
                 contentDescription = "more",
@@ -84,23 +84,27 @@ fun Post (modifier: Modifier = Modifier
             Icon(
                 modifier = Modifier.padding(4.dp),
                 imageVector = Icons.Default.FavoriteBorder,
-                contentDescription = "Like Icon"
+                contentDescription = "Like Icon",
+                        tint  = Color.Black
             )
             Icon(
                 modifier = Modifier.padding(4.dp),
                 imageVector = Icons.Outlined.ModeComment,
-                contentDescription = "Like Icon"
+                contentDescription = "Like Icon",
+                tint  = Color.Black
             )
             Icon(
                 modifier = Modifier.padding(4.dp),
                 imageVector = Icons.AutoMirrored.Outlined.Send,
-                contentDescription = "Like Icon"
+                contentDescription = "Like Icon",
+                tint  = Color.Black
             )
             Spacer(modifier = Modifier.weight(1f))
             Icon(
                 modifier = Modifier.padding(4.dp),
                 imageVector = Icons.Outlined.BookmarkBorder,
-                contentDescription = "Like Icon"
+                contentDescription = "Like Icon",
+                tint  = Color.Black
             )
         }
     }
